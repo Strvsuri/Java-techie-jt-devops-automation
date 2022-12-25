@@ -41,12 +41,16 @@
 /* multi
 linecomment */
 
+// single line comment
+/* multi
+linecomment */
+
 pipeline {
     agent any
     stages {
-        stage ("Git- checkout") {
+        stage ("Git checkout") {
             steps {
-                git 'https://github.com/Strvsuri/Java-techie-jt-devops-automation'
+                git branch: 'main', url: 'https://github.com/Strvsuri/Java-techie-jt-devops-automation'
             }
         }
     }
