@@ -44,7 +44,7 @@ linecomment */
 pipeline {
     agent any
     stages {
-        stage ("Git checkout") {
+        stage ("Git- checkout") {
             steps {
                 git 'https://github.com/Strvsuri/Java-techie-jt-devops-automation'
             }
