@@ -1,4 +1,4 @@
-pipeline {
+/* pipeline {
     agent any
     tools{
         maven 'maven_3_5_0'
@@ -33,6 +33,20 @@ pipeline {
                 script{
                     kubernetesDeploy (configs: 'deploymentservice.yaml',kubeconfigId: 'k8sconfigpwd')
                 }
+            }
+        }
+    }
+} */
+// single line comment
+/* multi
+linecomment */
+
+pipeline {
+    agent any
+    stages {
+        stage ("Git checkout") {
+            steps {
+                git 'https://github.com/Strvsuri/Java-techie-jt-devops-automation'
             }
         }
     }
